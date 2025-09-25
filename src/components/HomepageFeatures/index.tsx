@@ -1,33 +1,47 @@
 import type {ReactNode} from 'react';
 import clsx from 'clsx';
+
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
   description: ReactNode;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/card.svg').default,
+    title: 'Intelligent Code Assistance',
     description: (
       <>
-        Spark A1 lets you focus on your work, and we&apos;ll do the chores. Go
-        ahead and move your work to the next level.
+        Real-time coding feedback and AI-powered smart contract generation.
+        Get instant suggestions and improvements as you build.
+      </>
+    ),
+  },
+  {
+    title: 'Security First',
+    description: (
+      <>
+        Automated vulnerability scanning and security auditing.
+        Catch issues before deployment with continuous security checks.
+      </>
+    ),
+  },
+  {
+    title: 'Seamless Integration',
+    description: (
+      <>
+        Works with your favorite tools - Cursor, VS Code, Claude Code, and more.
+        MCP-powered for the latest Web3 documentation.
       </>
     ),
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({title, description}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
         <p>{description}</p>

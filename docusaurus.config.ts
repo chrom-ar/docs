@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Spark A1 Docs',
-  tagline: 'Chromar Spark A1 Documentation',
+  tagline: 'Intelligent Web3 Development with AI-Powered Assistance',
   favicon: 'img/favicon.svg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
