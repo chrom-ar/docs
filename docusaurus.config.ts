@@ -77,17 +77,18 @@ const config: Config = {
       logo: {
         alt: 'Spark A1 Logo',
         src: 'img/favicon.svg',
+        href: '/docs/intro',
       },
       items: [
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Intro',
+          label: 'Documentation',
         },
         {
           href: 'https://chrom.ar',
-          label: 'Home Site',
+          label: 'Main Site',
           position: 'left',
         },
         {
@@ -104,8 +105,12 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Intro',
+              label: 'Introduction',
               to: '/docs/intro',
+            },
+            {
+              label: 'Getting Started',
+              to: '/docs/getting-started',
             },
           ],
         },
@@ -122,7 +127,7 @@ const config: Config = {
           title: 'More',
           items: [
             {
-              label: 'Home Site',
+              label: 'Main Site',
               href: 'https://chrom.ar',
             },
             {
