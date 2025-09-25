@@ -119,7 +119,7 @@ const config: Config = {
           items: [
             {
               label: 'X',
-              href: 'https://x.com/chrom_ar',
+              href: 'https://x.com/chromar_spark',
             },
           ],
         },
