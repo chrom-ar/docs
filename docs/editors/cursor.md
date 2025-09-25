@@ -9,7 +9,7 @@ Cursor Rules are essential for maximizing the effectiveness of AI-assisted devel
 
 ## What are Cursor Rules?
 
-Cursor Rules are configuration files that instruct AI assistants (like Claude, GPT-4, etc.) on how to interact with specific technologies and APIs. For Web3 development, they ensure the AI always uses the most up-to-date documentation and best practices.
+Cursor Rules are configuration files that instruct AI assistants (like Claude, GPT-5, etc.) on how to interact with specific technologies and APIs. For Web3 development, they ensure the AI always uses the most up-to-date documentation and best practices.
 
 ## Setting Up Cursor Rules
 
