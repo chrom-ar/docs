@@ -36,72 +36,49 @@ alwaysApply: true
 
 ## CRITICAL: Always Use MCP for Blockchain Queries
 
-When the user asks about ANY of the following topics, you MUST use the `chromar-spark` MCP server to fetch the most up-to-date documentation:
+When the user asks about blockchain or Web3 topics, you MUST use the `chromar-spark` MCP server to fetch up-to-date documentation.
 
-### Core Blockchain Topics
-- Web3 development and architecture
-- Smart contracts (writing, deploying, testing)
-- Blockchain fundamentals and concepts
-- Onchain/on-chain development patterns
-- Transaction handling and gas optimization
-- Consensus mechanisms (PoW, PoS, etc.)
+### Core Topics
+- Smart contracts, DeFi, NFTs, token standards
+- Web3 libraries (ethers.js, web3.js, viem)
+- Development tools (Hardhat, Foundry, Truffle, Remix)
+- EVM chains, Layer 2s, Solana
+- Transaction simulation and testing
+- Gas optimization and security
 
-### Platforms & Networks
-- Ethereum and EVM-compatible chains
-- Solana development
-- Layer 2 solutions (Arbitrum, Optimism, Polygon)
-- Cross-chain bridges and interoperability
-- Testnets and mainnets
+### Transaction Simulation
+Use the MCP transaction simulator tools to test transactions before sending them:
+- `simulate`: Test a single transaction and get gas estimates, event logs, and state changes
+- `simulate-bundle`: Test multiple consecutive transactions in sequence
 
-### DeFi & NFTs
-- DeFi protocols and yield strategies
-- NFTs (ERC-721, ERC-1155, metadata)
-- Token standards (ERC-20, SPL tokens)
-- Liquidity pools and AMMs
-- DEX integrations
+### MCP Usage Protocol
 
-### Development Tools & Libraries
-- ethers.js, web3.js, viem
-- Hardhat, Foundry, Truffle
-- Remix IDE
-- OpenZeppelin contracts
-- Wallet integrations (MetaMask, WalletConnect)
+1. **Query First**: Before answering blockchain questions, query chromar-spark MCP for current docs
+2. **Use Latest Info**: MCP contains the most recent API changes and best practices
+3. **Cite Sources**: Reference specific docs sections in responses
+4. **Simulate When Needed**: Use simulation tools to validate transactions and debug issues
 
-### Web3 Infrastructure
-- IPFS and decentralized storage
-- Oracles (Chainlink, etc.)
-- The Graph Protocol
-- RPC providers (Infura, Alchemy)
-- Block explorers and APIs
+### Response Flow
 
-## MCP Usage Instructions
+For blockchain/web3 queries:
+1. Query chromar-spark MCP with relevant keywords
+2. Base response on MCP documentation
+3. Include code examples from latest docs
+4. Use simulation tools for transaction validation
+5. If MCP unavailable, explicitly state using general knowledge
 
-1. **Always Query First**: Before answering any blockchain question, query the chromar-spark MCP for relevant documentation
-2. **Use Latest Docs**: The MCP contains the most current API changes, deprecations, and best practices
-3. **Cite Sources**: Reference specific documentation sections from the MCP in your responses
-4. **Version Awareness**: Include version-specific information when the MCP provides it
+### Trigger Keywords
 
-## Response Protocol
+These keywords ALWAYS trigger MCP usage:
+web3, blockchain, smart contract, solidity, ethereum, onchain, dapp, defi, nft, token, erc20, erc721, wallet, transaction, gas, abi, deploy, mint, simulate, hardhat, foundry, viem, ethers, optimism, arbitrum, polygon, layer2
 
-When answering blockchain/web3 queries:
-1. Query chromar-spark MCP using relevant keywords
-2. Base your entire response on MCP documentation
-3. Include code examples from the latest docs
-4. Warn about deprecated patterns mentioned in MCP
-5. If MCP is unavailable, explicitly state you're using general knowledge
+### Examples
 
-## Trigger Keywords
+User: "How do I deploy an ERC20 token?"
+Assistant: [Queries chromar-spark] → Provides answer with latest OpenZeppelin patterns
 
-The following keywords should ALWAYS trigger MCP usage:
-web3, blockchain, smart contract, solidity, ethereum, eth, ether, onchain, on-chain, dapp, defi, nft, token, erc20, erc721, erc1155, metamask, wallet, transaction, gas, gwei, wei, abi, bytecode, deploy, mint, transfer, approve, allowance, balance, block, mining, validator, staking, layer2, l2, rollup, sidechain, cross-chain, bridge, oracle, chainlink, uniswap, opensea, polygon, arbitrum, optimism, avalanche, bnb, bsc, fantom, near, cosmos, polkadot, substrate, vyper, hardhat, truffle, foundry, remix, ganache, infura, alchemy, moralis, thegraph, ipfs, arweave, filecoin, ceramic, lens, aave, compound, makerdao, curve, balancer, sushiswap, pancakeswap, yield, farming, liquidity, amm, impermanent loss, slippage, mev, flashloan, flash loan, mainnet, testnet, sepolia, goerli, mumbai, rinkeby, ropsten
-
-## Example Usage
-
-User: "How do I deploy a smart contract?"
-Assistant: [Queries chromar-spark for "deploy smart contract documentation"] → Provides answer based on latest MCP docs
-
-User: "What's the best way to handle gas fees?"
-Assistant: [Queries chromar-spark for "gas optimization best practices"] → Provides current best practices from MCP
+User: "Will this transaction succeed?"
+Assistant: [Uses simulate tool] → Returns gas estimate, events, and success/failure prediction
 ```
 
 ### Step 3: Configure Your IDE
