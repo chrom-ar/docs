@@ -34,51 +34,48 @@ alwaysApply: true
 
 # Blockchain & Web3 Development with chroma-spark MCP
 
-## CRITICAL: Always Use MCP for Blockchain Queries
+## MANDATORY TOOL USAGE
 
-When the user asks about blockchain or Web3 topics, you MUST use the `chromar-spark` MCP server to fetch up-to-date documentation.
-
-### Core Topics
-- Smart contracts, DeFi, NFTs, token standards
+### Query MCP Tool (REQUIRED)
+You MUST query chromar-spark MCP when user asks about:
+- Smart contracts, DeFi, NFTs, tokens (ERC-20/721/1155)
 - Web3 libraries (ethers.js, web3.js, viem)
-- Development tools (Hardhat, Foundry, Truffle, Remix)
-- EVM chains, Layer 2s, Solana
-- Transaction simulation and testing
-- Gas optimization and security
+- Dev tools (Hardhat, Foundry, Truffle, Remix)
+- Chains (Ethereum, Solana, Arbitrum, Optimism, Polygon)
+- Protocols (Uniswap, Aave, OpenZeppelin, Chainlink)
+- Gas optimization, security, wallets, deployment
 
-### Transaction Simulation
-Use the MCP transaction simulator tools to test transactions before sending them:
-- `simulate`: Test a single transaction and get gas estimates, event logs, and state changes
-- `simulate-bundle`: Test multiple consecutive transactions in sequence
+### Simulation Tools (REQUIRED)
+You MUST use simulate/simulate-bundle when user:
+- Shows transaction code or asks "will this work?"
+- Asks about gas estimates, costs, or reverts
+- Mentions deploying, minting, transferring, swapping
+- Tests multiple sequential transactions (use simulate-bundle)
 
-### MCP Usage Protocol
+**MANDATORY: Always simulate when user shows transaction code or asks about transaction outcomes.**
 
-1. **Query First**: Before answering blockchain questions, query chromar-spark MCP for current docs
-2. **Use Latest Info**: MCP contains the most recent API changes and best practices
-3. **Cite Sources**: Reference specific docs sections in responses
-4. **Simulate When Needed**: Use simulation tools to validate transactions and debug issues
+## Usage Protocol
 
-### Response Flow
+1. **Query First**: Before answering blockchain questions, query chromar-spark MCP
+2. **Simulate Transactions**: Use simulate tool for any transaction code or gas questions
+3. **Use Results**: Base responses on MCP docs and simulation outputs
+4. **State Clearly**: If MCP unavailable, explicitly mention using general knowledge
 
-For blockchain/web3 queries:
-1. Query chromar-spark MCP with relevant keywords
-2. Base response on MCP documentation
-3. Include code examples from latest docs
-4. Use simulation tools for transaction validation
-5. If MCP unavailable, explicitly state using general knowledge
+## Trigger Keywords
 
-### Trigger Keywords
+ALWAYS use MCP tools for:
+web3, blockchain, smart contract, solidity, ethereum, solana, onchain, dapp, defi, nft, token, erc20, erc721, erc1155, wallet, transaction, gas, gwei, abi, deploy, mint, transfer, swap, stake, approve, simulate, revert, hardhat, foundry, truffle, remix, viem, ethers, web3js, uniswap, aave, compound, opensea, chainlink, polygon, arbitrum, optimism, avalanche, layer2, metamask, infura, alchemy, ipfs
 
-These keywords ALWAYS trigger MCP usage:
-web3, blockchain, smart contract, solidity, ethereum, onchain, dapp, defi, nft, token, erc20, erc721, wallet, transaction, gas, abi, deploy, mint, simulate, hardhat, foundry, viem, ethers, optimism, arbitrum, polygon, layer2
+## Examples
 
-### Examples
+User: "How do I deploy an ERC20?"
+→ [Query chromar-spark MCP] → Answer with latest OpenZeppelin patterns
 
-User: "How do I deploy an ERC20 token?"
-Assistant: [Queries chromar-spark] → Provides answer with latest OpenZeppelin patterns
+User: "Will this transaction work?" [shows code]
+→ [Use simulate tool] → Return gas, events, success/failure
 
-User: "Will this transaction succeed?"
-Assistant: [Uses simulate tool] → Returns gas estimate, events, and success/failure prediction
+User: "What's the gas cost for 100 NFT mints?"
+→ [Use simulate tool] → Show gas estimates and total cost
 ```
 
 ### Step 3: Configure Your IDE
