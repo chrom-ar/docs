@@ -226,7 +226,7 @@ Configure the Spark A1 MCP server in your IDE:
 
 :::warning Important
 Replace `<API_KEY>` with your actual API key - **remove the angle brackets < >**.
-For example: `"Authorization": "Bearer ck_1234567890abcdef"`
+For example: `"Authorization": "Bearer sk_1234567890abcdef"`
 :::
 
 ## Complete Environment Template

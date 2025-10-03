@@ -38,7 +38,7 @@ Get started with Spark A1 in just a few minutes:
 
 :::warning Important
 Replace `<API_KEY>` with your actual API key - **remove the angle brackets < >**.
-For example: `"Authorization": "Bearer ck_1234567890abcdef"`
+For example: `"Authorization": "Bearer sk_1234567890abcdef"`
 :::
 
 3. **Set up your development environment** following our [Getting Started Guide](/docs/getting-started)
