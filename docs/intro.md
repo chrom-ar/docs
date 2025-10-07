@@ -8,7 +8,7 @@ Welcome to **Spark A1** - Your intelligent Web3 development companion that provi
 
 ## What is Spark A1?
 
-Spark A1 is a cutting-edge development tool designed to streamline and enhance your Web3 development workflow. It acts as your intelligent coding assistant, offering:
+Spark A1 is an MCP server designed to streamline and enhance your Web3 development workflow. It acts as your intelligent coding assistant, offering:
 
 - **Instant Coding Feedback**: Get real-time suggestions and improvements as you code
 - **Automated Security Scanning**: Continuous vulnerability auditing to ensure your smart contracts are secure
