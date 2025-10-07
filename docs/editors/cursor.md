@@ -64,7 +64,7 @@ You MUST use simulate/simulate-bundle when user:
 ## Trigger Keywords
 
 ALWAYS use MCP tools for:
-web3, blockchain, smart contract, solidity, ethereum, solana, onchain, dapp, defi, nft, token, erc20, erc721, erc1155, wallet, transaction, gas, gwei, abi, deploy, mint, transfer, swap, stake, approve, simulate, revert, hardhat, foundry, truffle, remix, viem, ethers, web3js, uniswap, aave, compound, opensea, chainlink, polygon, arbitrum, optimism, avalanche, layer2, metamask, infura, alchemy, ipfs
+web3, blockchain, smart contract, solidity, ethereum, solana, onchain, dapp, defi, nft, token, erc20, erc721, erc1155, wallet, transaction, gas, gwei, abi, deploy, mint, transfer, swap, stake, approve, simulate, revert, hardhat, foundry, truffle, remix, viem, ethers, web3js, uniswap, aave, compound, polymarket, opensea, chainlink, polygon, arbitrum, optimism, avalanche, layer2, metamask, infura, alchemy, ipfs
 
 ## Examples
 
