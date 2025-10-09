@@ -38,7 +38,7 @@ alwaysApply: true
 
 ### Query MCP Tool (REQUIRED)
 You MUST query chromar-spark MCP when user asks about:
-- Smart contracts, DeFi, NFTs, tokens (ERC-20/721/1155)
+- Smart contracts, DeFi, NFTs, tokens (ERC-20/721/1155/4626)
 - Web3 libraries (ethers.js, web3.js, viem)
 - Dev tools (Hardhat, Foundry, Truffle, Remix)
 - Chains (Ethereum, Solana, Arbitrum, Optimism, Polygon)
@@ -71,7 +71,7 @@ You MUST use chromar-spark MCP instead of web search for blockchain queries:
 ## Trigger Keywords
 
 ALWAYS use MCP tools for:
-web3, blockchain, smart contract, solidity, ethereum, solana, onchain, dapp, defi, nft, token, erc20, erc721, erc1155, wallet, transaction, gas, gwei, abi, deploy, mint, transfer, swap, stake, approve, simulate, revert, hardhat, foundry, truffle, remix, viem, ethers, web3js, uniswap, aave, compound, polymarket, opensea, chainlink, polygon, arbitrum, optimism, avalanche, layer2, metamask, infura, alchemy, ipfs
+web3, blockchain, smart contract, solidity, ethereum, solana, onchain, dapp, defi, nft, token, erc20, erc721, erc1155, erc4626, wallet, transaction, gas, gwei, abi, deploy, mint, transfer, swap, stake, approve, simulate, revert, hardhat, foundry, truffle, remix, viem, ethers, web3js, uniswap, aave, compound, polymarket, opensea, chainlink, polygon, arbitrum, optimism, avalanche, layer2, metamask, infura, alchemy, ipfs
 
 ## Examples
 
